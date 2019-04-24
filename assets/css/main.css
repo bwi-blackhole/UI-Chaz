@@ -13,7 +13,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1A0761;
+    background-color: #000;
+    border-bottom: solid 2px #ee3501;
 }
 
 li {
@@ -22,21 +23,48 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: red;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 35px;
     text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Audiowide', cursive;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #4930A8;
+    background-color: #f85326;
+    color: #000;
 }
 
 .top-section {
     width: 100%;
     height: 1200px;
-    background-image: url("../../images/black-hole.jpg");
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    
+}
+
+h1 {
+    color: #f85326;
+    font-size: 2.8em;
+    font-family: 'Audiowide', cursive;
+}
+
+h3 {
+    color: #f85326;
+    font-size: 1.8em;
+    font-family: 'Audiowide', cursive;
+}
+
+.center-box {
+    width: 600px;
+    height: 600px;
+    background-image: url("../../images/giphy.gif");
+
 }
 .middle-section {
     width: 100%;
