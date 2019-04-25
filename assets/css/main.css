@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Audiowide', cursive;
 }
 
 nav {
@@ -33,7 +34,7 @@ li a {
     padding: 20px 35px;
     text-decoration: none;
     font-size: 1.2em;
-    font-family: 'Audiowide', cursive;
+
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -48,6 +49,12 @@ li a:hover {
 }
 
 .top-section {
+    display: flex;
+    border-bottom: solid 5px #fff;
+
+}
+
+.main-top-section {
     width: 100%;
     height: 800px;
     align-items: center;
@@ -58,16 +65,16 @@ li a:hover {
     
 }
 
+
 h1 {
     color: #f85326;
     font-size: 2.8em;
-    font-family: 'Audiowide', cursive;
+    
 }
 
 h3 {
     color: #f85326;
     font-size: 1.8em;
-    font-family: 'Audiowide', cursive;
 }
 
 /* .center-box {
@@ -82,13 +89,90 @@ img.animated-gif{
     height: auto;
   }
 
+.signup {
+    height: 60px;
+    width: 200px;
+    background-color: #f85326;
+    color: #000;
+    border-color: #f85326;
+    border-radius: 25px;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.2em;
+}  
+
+.signup:hover {
+    background-color: #000;
+    color: #f85326;
+    border-color: #ee3501;
+}
+
+
 .middle-section {
     width: 100%;
     height: 500px;
     background-color: #A52200;
+    display: flex;
+    
 }
-.bottom-section {
-    width: 100%;
+
+.pitch h3{
+    text-align: center;
+    color: #000;
+    font-size: 2.3em;
+}
+
+.pitch h4{
+    text-align: center;
+    color: #000;
+    font-size: 1.9em;
+}
+
+.pitch p{
+    color: #fff;
+    font-size: 1.4em;
+    margin: 0 20px ;
+}
+
+.middle-section-left {
+    width: 300px;
     height: 500px;
     background-color: #000;
 }
+
+.tabs-links {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tabs-links .tabs-link {
+    padding: 20px 40px;
+    background: #A52200;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.bottom-section {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+
+.tabs-item {
+  display: none;
+  width: 75%;
+}
+
+.active-tab {
+    display: block;
+}
+
+.tabs-link .active-link {
+    background-color: #000;
+    color: black;
+  }
+
+.tabs-link:hover {
+    background-color: #be2530;
+  }
+

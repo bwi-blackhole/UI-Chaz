@@ -1,17 +1,49 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+class TabLink {
+    constructor(domElement) {
+        this.domElement = domElement;
+        console.log(this.domElement)
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
+        this.data = this.domElement.dataset.tab;
+        console.log(this.data)
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+        this.itemElement = document.querySelector(`.tabs-item[data-tab='${this.data}']`);
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+        this.tabItem = new TabItem(this.itemElement);
+
+        this.domElement.addEventListener('click', this.selectTab.bind(this));
+    }
+
+    selectTab() {
+        const links = document.querySelectorAll('.tabs-link');
+
+        links.forEach(function(link){
+            link.classList.remove('active-link');
+        })
+
+        this.domElement.classList.add('active-link');
+
+        this.tabItem.selectTab();
+    }
 }
+
+class TabItem {
+    constructor(domElement) {
+        this.domElement = domElement;
+    }
+
+    selectTab() {
+        const items = document.querySelectorAll('.tabs-item')
+
+        items.forEach(function(tab){
+            tab.classList.remove('active-tab')
+        })
+
+        this.domElement.classList.add('active-tab')
+    }
+}
+
+
+const links = document.querySelectorAll('.tabs-link');
+links.forEach(link => new TabLink(link))
+
+console.log(links)
