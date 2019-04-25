@@ -3,7 +3,10 @@ body {
     font-family: 'Audiowide', cursive;
 }
 
-nav {
+
+/* Header area */
+
+.header-nav {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
@@ -13,7 +16,7 @@ nav {
 
 }
 
-ul {
+.header-nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -23,11 +26,11 @@ ul {
 
 }
 
-li {
+.header-nav li {
     float: left;
 }
 
-li a {
+.header-nav li a {
     display: block;
     color: #A52200;
     text-align: center;
@@ -37,8 +40,7 @@ li a {
 
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+.header-nav li a:hover {
     background-color: #f85326;
     color: #000;
 }
@@ -47,6 +49,11 @@ li a:hover {
     width: 140px;
     height: 70px;
 }
+
+/* Header area end */
+
+
+/* Top section */
 
 .top-section {
     display: flex;
@@ -62,32 +69,22 @@ li a:hover {
     background-color: #000;
     flex-direction: column;
     padding-top: 100px;
-    
 }
 
-
-h1 {
+.top-section h1 {
     color: #f85326;
-    font-size: 2.8em;
-    
+    font-size: 2.8em; 
 }
 
-h3 {
+.top-section h3 {
     color: #f85326;
     font-size: 1.8em;
 }
 
-/* .center-box {
-    width: 600px;
-    height: 600px;
-    background-image: url("../../images/giphy.gif");
-
-} */
-
 img.animated-gif{
     width: 450px;
     height: auto;
-  }
+}
 
 .signup {
     height: 60px;
@@ -106,13 +103,16 @@ img.animated-gif{
     border-color: #ee3501;
 }
 
+/* Top section end */
+
+
+/* Middle section */
 
 .middle-section {
     width: 100%;
-    height: 500px;
+    height: 420px;
     background-color: #A52200;
     display: flex;
-    
 }
 
 .tabs-item h3{
@@ -158,12 +158,6 @@ img.animated-gif{
     cursor: pointer;
 }
 
-.bottom-section {
-    width: 100%;
-    height: 200px;
-    background-color: #000;
-}
-
 .tabs-item {
   display: none;
   width: 75%;
@@ -177,12 +171,49 @@ img.animated-gif{
     background-color: #A52200;
     color: #000;
     border: 1px #000 solid;
-  }
+}
 
 .tabs-link:hover {
     background-color: #A52200;
     color: #000;
     border: 1px #000 solid;
+}
 
-  }
+/* Bottom section */
+.bottom-section {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    border-bottom: solid 2px #ee3501;
+}
+
+footer {
+    background-color: #000;
+    margin: 0;
+    height: auto;
+}
+
+footer ul{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer li {
+    width: 200px;
+    height: 50px;
+    padding: 20px 0;
+}
+
+footer  ul li a{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer-nav li a:hover {
+    background-color: #f85326;
+    color: #000;
+}
 
