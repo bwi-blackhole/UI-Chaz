@@ -1,3 +1,12 @@
+
+const myBtn = document.querySelector("#box-button");
+const mysquare = document.querySelector(".box ");
+const mytext = document.querySelector(".box p");
+myBtn.addEventListener('click', function(event){
+    mysquare.classList.add('transform-active');
+
+});
+
 class TabLink {
     constructor(domElement) {
         this.domElement = domElement;
@@ -46,4 +55,5 @@ class TabItem {
 const links = document.querySelectorAll('.tabs-link');
 links.forEach(link => new TabLink(link))
 
-console.log(links)
+
+
