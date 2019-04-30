@@ -1,9 +1,12 @@
 
 const myBtn = document.querySelector("#box-button");
 const mysquare = document.querySelector(".box ");
+const myheader = document.querySelector(".box h3");
 const mytext = document.querySelector(".box p");
 myBtn.addEventListener('click', function(event){
     mysquare.classList.add('transform-active');
+    myheader.style.display = "none"
+    mytext.style.display = "none";
 
 });
 
