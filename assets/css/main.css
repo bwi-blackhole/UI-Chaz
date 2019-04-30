@@ -91,17 +91,26 @@ body {
 
 .top-section h1 {
     color: #f85326;
-    font-size: 2.8em; 
+    font-size: 4em; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
-.top-section h3 {
-    color: #f85326;
-    font-size: 1.8em;
+.top-section h2 {
+    color: #fff;
+    font-size: 2.8em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
 }
+
 
 img.animated-gif{
     width: 450px;
     height: auto;
+}
+
+.main-top-section button{
+    margin-top: 20px;
 }
 
 .signup {
