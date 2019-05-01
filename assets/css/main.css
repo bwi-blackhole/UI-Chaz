@@ -3,6 +3,7 @@ body {
     font-family: 'Audiowide', cursive;
     background-image: url("/images/orange-space.jpg");
     background-size: 1920px 1080px;
+
 }
 
 
@@ -56,15 +57,13 @@ body {
 
 .top-section {
     display: flex;
+    justify-content: center;
 }
 
 
 
 .top-left-section {
     width: 37%;
-
-
-
 }
 
 .main-top-section {
@@ -74,9 +73,6 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-
-    
-
 }
 
 .main-top-section img {
@@ -85,8 +81,6 @@ body {
 
 .top-right-section {
     width: 38%;
-
-
 }
 
 .top-section h1 {
@@ -102,7 +96,6 @@ body {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000;
 }
-
 
 img.animated-gif{
     width: 450px;
@@ -364,6 +357,22 @@ footer {
     background-color: #000;
 }
 
+@media screen and (min-width: 600px) {
+
+    .main-top-section {
+        height: 850px;
+    }
+
+    .top-section h2{
+        text-align: center;
+    }
+
+    .signup{
+        height: 60px;
+        width: 200px;
+    }
+
+}
 @media screen and (max-width: 500px) {
     .dropdown{
         display: block;
@@ -371,6 +380,19 @@ footer {
 
     .header-nav {
         display: none;
+    }
+
+    .top-section h1{
+        font-size: 3.5em;
+    }
+
+    .top-section h2{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .main-top-section {
+        padding-top: 20px;
     }
 
     .middle-section {
