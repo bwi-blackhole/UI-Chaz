@@ -362,10 +362,10 @@ footer {
 
 
 
-@media screen and (max-width: 900px) and (min-width: 600px){
+@media screen and (max-width: 1024px) and (min-width: 600px){
 
     .main-top-section {
-        height: 1000px;
+        height: 900px;
     }
 
     .top-section h2{
@@ -378,8 +378,8 @@ footer {
     }
 
     .middle-section {
-        height: 1000px;
-        background-color: #000;
+        height: 600px;
+
     }
 
 }
