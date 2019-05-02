@@ -360,6 +360,8 @@ footer {
     background-color: #000;
 }
 
+
+
 @media screen and (max-width: 900px) and (min-width: 600px){
 
     .main-top-section {
@@ -430,4 +432,67 @@ footer {
         font-size: 0.7em;
         list-style-type: none;
     }
+}
+
+/* about us page */
+
+.content-area {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-us-area-top {
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us-area-bottom {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person {
+    width: 400px;
+    height: 300px;
+    background-image: url("/images/black-hole3.gif");
+ 
+    margin: 20px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.person h2{
+    color: #f85326;
+}
+
+.person p{
+    color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+
+    .content-area {
+        height: 3000px;
+    }
+    .about-us-area-top {
+        flex-direction: column;
+    }
+    .about-us-area-bottom {
+        flex-direction: column;
+
+    }
+
 }
