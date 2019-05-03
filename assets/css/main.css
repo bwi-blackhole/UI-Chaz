@@ -102,11 +102,9 @@ img.animated-gif{
     height: auto;
 }
 
-.main-top-section button{
-    margin-top: 20px;
-}
 
 .signup {
+    margin-top: 20px;
     height: 60px;
     width: 200px;
     background-color: #f85326;
@@ -114,12 +112,21 @@ img.animated-gif{
     border-color: #f85326;
     border-radius: 25px;
     font-size: 1.2em;
-}  
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.signup a u{
+    text-decoration: none !important;
+}
 
 .signup:hover {
     background-color: #000;
     color: #f85326;
     border-color: #ee3501;
+    text-decoration: none !important;
 }
 
 /* Top section end */
@@ -363,7 +370,7 @@ footer {
 
 /* Tablet View */
 
-@media screen and (max-width: 1024px) and (min-width: 600px){
+@media screen and (max-width: 1400px) and (min-width: 800px){
 
     .main-top-section {
         height: 900px;
@@ -379,7 +386,7 @@ footer {
     }
 
     .middle-section {
-        height: 600px;
+        height: 800px;
 
     }
 
@@ -387,7 +394,7 @@ footer {
 
 /* Phone View */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .dropdown{
         display: block;
     }
